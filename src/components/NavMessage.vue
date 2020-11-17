@@ -27,7 +27,7 @@
                 default: 'badge-danger'
             },
             badgeCount: {
-                type: Number,
+                type: [Number, String],
                 default: 0
             },
             showAllLink: {

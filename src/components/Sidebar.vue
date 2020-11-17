@@ -20,6 +20,8 @@
 
                     <SidebarItem path="/about" title="About" icon-class="far fa-comment"/>
 
+                    <SidebarItem path="/form" title="Form"/>
+
                     <SidebarDropdownItem label="Widgets">
                         <SidebarItem path="/" title="Forms"/>
                     </SidebarDropdownItem>
