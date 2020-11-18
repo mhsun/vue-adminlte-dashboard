@@ -12,7 +12,7 @@
         props: {
             imgPath: {
                 type: String,
-                default: "/img/AdminLTELogo.png"
+                default: "https://ui-avatars.com/api/?name=Awesome"
             },
             name: {
                 type: String,

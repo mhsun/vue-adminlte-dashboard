@@ -1,7 +1,7 @@
 <template>
     <router-link :to="forwardLink" class="dropdown-item">
         <div class="media">
-            <img :src="imgSrc" alt="Avatar" class="img-size-50 mr-3 img-circle">
+            <img :src="imagePath" alt="Avatar" class="img-size-50 mr-3 img-circle">
             <div class="media-body">
                 <h3 class="dropdown-item-title">{{ name }}</h3>
                 <p class="text-sm">{{ getMessage }}</p>
@@ -16,8 +16,7 @@
         name: "NavMessageItem",
         props: {
             imgSrc: {
-                type: String,
-                default: '../../dist/img/user1-128x128.jpg'
+                type: String
             },
             name: {
                 type: String,
@@ -41,6 +40,13 @@
                     return this.shortText.substring(0, 30).concat('..');
                 }
                 return this.shortText;
+            },
+
+            imagePath() {
+                if (this.imgSrc) {
+                    return this.imgSrc;
+                }
+                return "https://ui-avatars.com/api/?name=" + this.name.replace(' ', '+');
             },
 
             timeAgo() {

@@ -21,6 +21,9 @@
                 <div class="col-md-6">
                     <member-list :member-list="memberList"/>
                 </div>
+                <div class="col-md-6">
+                    <product-list :products="products"/>
+                </div>
             </div>
         </div>
     </section>
@@ -33,6 +36,7 @@
     import BreadCrumb from "../components/ui/BreadCrumb";
     import InfoBox from "../components/dashboard/InfoBox";
     import MemberList from "../components/dashboard/MemberList";
+    import ProductList from "../components/dashboard/ProductList";
 
     export default {
         name: 'Home',
@@ -42,7 +46,8 @@
             StatBox,
             BreadCrumb,
             InfoBox,
-            MemberList
+            MemberList,
+            ProductList
         },
         data() {
             return {
@@ -70,6 +75,14 @@
                         name: "Rose Janet",
                         image: "https://ui-avatars.com/api/?name=Rose+Janet",
                         time: 'Yesterday'
+                    }
+                ],
+                products: [
+                    {
+                        id: 1,
+                        title: "First Product",
+                        price: "$200",
+                        shortDescription: "This is some random text about the product"
                     }
                 ]
             }
