@@ -27,9 +27,9 @@
 </template>
 
 <script>
-    import VForm from "../components/VForm";
-    import BreadCrumb from "../components/BreadCrumb";
-    import VTable from "../components/VTable";
+    import VForm from "../components/form/VForm";
+    import BreadCrumb from "../components/ui/BreadCrumb";
+    import VTable from "../components/table/VTable";
 
     export default {
         name: 'Component',

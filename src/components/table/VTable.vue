@@ -21,7 +21,7 @@
 
 <script>
     import VPagination from "./VPagination";
-    import VTableHeader from "./partial/VTableHeader";
+    import VTableHeader from "../partial/table/VTableHeader";
 
     export default {
         name: "VTable",

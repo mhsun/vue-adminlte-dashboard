@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import NavMessageItem from "./partial/NavMessageItem";
+    import NavMessageItem from "../partial/layout/NavMessageItem";
     export default {
         name: "NavMessage",
         props: {

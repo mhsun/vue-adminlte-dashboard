@@ -636,7 +636,7 @@
 </template>
 
 <script>
-    import BreadCrumb from "../components/BreadCrumb";
+    import BreadCrumb from "../components/ui/BreadCrumb";
 
     export default {
         name: "Form",

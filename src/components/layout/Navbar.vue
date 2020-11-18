@@ -65,9 +65,9 @@
 
 <script>
     import NavMessage from "./NavMessage";
-    import NavMessageItem from "./partial/NavMessageItem";
+    import NavMessageItem from "../partial/layout/NavMessageItem";
     import NavNotification from "./NavNotification";
-    import NavNotificationItem from "./partial/NavNotificationItem";
+    import NavNotificationItem from "../partial/layout/NavNotificationItem";
 
     export default {
         name: "Navbar",
