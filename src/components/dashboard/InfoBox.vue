@@ -1,7 +1,7 @@
 <template>
     <div :class="size">
-        <div class="info-box">
-            <span class="info-box-icon elevation-1" :class="bgClass">
+        <div class="info-box" :class="flat ? bgClass : ''">
+            <span class="info-box-icon" :class="[bgClass, elevation ? 'elevation-1' : '']">
                 <em :class="icon"></em>
             </span>
 
@@ -37,6 +37,14 @@
                 type: String,
                 required: true
             },
+            flat: {
+                type: Boolean,
+                default: false
+            },
+            elevation: {
+                type: Boolean,
+                default: false
+            }
         },
         computed: {
             getTitle() {
