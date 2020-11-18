@@ -1,4 +1,4 @@
-# ltodo
+# vue-adminlte-dashboard
 
 ## Project setup
 ```

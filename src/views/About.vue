@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import VForm from "../components/partial/VForm";
+    import VForm from "../components/VForm";
     import BreadCrumb from "../components/BreadCrumb";
 
     export default {

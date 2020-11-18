@@ -21,7 +21,7 @@
 </template>
 
 <script>
-    import VInput from "./VInput";
+    import VInput from "./partial/VInput";
 
     export default {
         name: "VForm",

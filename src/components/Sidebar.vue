@@ -22,6 +22,8 @@
 
                     <SidebarItem path="/form" title="Form"/>
 
+                    <SidebarItem path="/table" title="Table"/>
+
                     <SidebarDropdownItem label="Widgets">
                         <SidebarItem path="/" title="Forms"/>
                     </SidebarDropdownItem>
