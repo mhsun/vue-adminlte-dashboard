@@ -11,6 +11,15 @@
                                 @submitted="handle"
                         />
                     </div>
+                    <div class="col-md-6">
+                        <v-table :columns="columns">
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                        </v-table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -20,12 +29,14 @@
 <script>
     import VForm from "../components/VForm";
     import BreadCrumb from "../components/BreadCrumb";
+    import VTable from "../components/VTable";
 
     export default {
-        name: 'About',
+        name: 'Component',
         components: {
             VForm,
-            BreadCrumb
+            BreadCrumb,
+            VTable
         },
         data() {
             return {
@@ -44,6 +55,9 @@
                         model: "email",
                         required: true
                     }
+                ],
+                columns: [
+                    'Id', 'Name', 'Email'
                 ]
             }
         },

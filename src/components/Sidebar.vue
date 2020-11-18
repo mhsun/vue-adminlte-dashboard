@@ -18,14 +18,12 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <SidebarItem path="/" title="Dashboard" icon-class="fas fa-tachometer-alt"/>
 
-                    <SidebarItem path="/about" title="About" icon-class="far fa-comment"/>
-
-                    <SidebarItem path="/form" title="Form"/>
-
-                    <SidebarItem path="/table" title="Table"/>
+                    <SidebarItem path="/component" title="Component" icon-class="far fa-comment"/>
 
                     <SidebarDropdownItem label="Widgets">
-                        <SidebarItem path="/" title="Forms"/>
+                        <SidebarItem path="/form" title="Forms"/>
+
+                        <SidebarItem path="/table" title="Table"/>
                     </SidebarDropdownItem>
                 </ul>
             </nav>
