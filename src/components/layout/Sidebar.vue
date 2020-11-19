@@ -18,9 +18,9 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <SidebarItem path="/" title="Dashboard" icon-class="fas fa-tachometer-alt"/>
 
-                    <SidebarItem path="/component" title="Component" icon-class="far fa-comment"/>
+                    <SidebarItem path="/widget" title="Widget" icon-class="fas fa-th"/>
 
-                    <SidebarDropdownItem label="Widgets">
+                    <SidebarDropdownItem label="Components">
                         <SidebarItem path="/form" title="Forms"/>
 
                         <SidebarItem path="/table" title="Table"/>
