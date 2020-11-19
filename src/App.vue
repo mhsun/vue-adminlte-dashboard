@@ -2,12 +2,12 @@
     <div id="app">
         <div class="hold-transition sidebar-mini">
             <div class="wrapper">
-                <Navbar></Navbar>
-                <Sidebar></Sidebar>
+                <navbar/>
+                <sidebar/>
                 <div class="content-wrapper">
                     <router-view/>
                 </div>
-                <Footer></Footer>
+                <footer/>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
         components: {
             Navbar,
             Sidebar,
-            Footer
+            Footer,
         }
     }
 </script>

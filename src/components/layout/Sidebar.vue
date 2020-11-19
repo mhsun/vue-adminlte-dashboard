@@ -20,6 +20,10 @@
 
                     <SidebarItem path="/widget" title="Widget" icon-class="fas fa-th"/>
 
+                    <SidebarDropdownItem label="UI Elements">
+                        <SidebarItem path="/ui/general" title="General"/>
+                    </SidebarDropdownItem>
+
                     <SidebarDropdownItem label="Components">
                         <SidebarItem path="/form" title="Forms"/>
 

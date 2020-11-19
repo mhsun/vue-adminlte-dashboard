@@ -24,6 +24,11 @@ const routes = [
         path: '/table',
         name: 'Table',
         component: () => import('../views/Table')
+    },
+    {
+        path: '/ui/general',
+        name: 'Table',
+        component: () => import('../views/UIElements')
     }
 ]
 
