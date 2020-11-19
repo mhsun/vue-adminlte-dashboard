@@ -16,6 +16,7 @@
         <div class="card-body p-0">
             <ul class="products-list product-list-in-card pl-2 pr-2">
                 <product-list-item v-for="product in products"
+                                   :key="product.id"
                                    :title="product.title"
                                    :price="product.price"
                                    :short-description="product.shortDescription"

@@ -25,6 +25,16 @@
                     <product-list :products="products"/>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <order-list :columns="columns"
+                                :orders="orders"
+                                add-new-route="/"
+                                view-all-route="/"
+                    />
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -37,6 +47,7 @@
     import InfoBox from "../components/dashboard/InfoBox";
     import MemberList from "../components/dashboard/MemberList";
     import ProductList from "../components/dashboard/ProductList";
+    import OrderList from "../components/dashboard/OrderList";
 
     export default {
         name: 'Home',
@@ -47,7 +58,8 @@
             BreadCrumb,
             InfoBox,
             MemberList,
-            ProductList
+            ProductList,
+            OrderList
         },
         data() {
             return {
@@ -83,6 +95,29 @@
                         title: "First Product",
                         price: "$200",
                         shortDescription: "This is some random text about the product"
+                    }
+                ],
+                columns: [
+                  "Order No.", "Item", "Status"
+                ],
+                orders: [
+                    {
+                        id: 1,
+                        order_no: "1212",
+                        item: {
+                            id: 1,
+                            title: "Mobile Phone"
+                        },
+                        status: "success"
+                    },
+                    {
+                        id: 2,
+                        order_no: "3221",
+                        item: {
+                            id: 2,
+                            title: "Laptop"
+                        },
+                        status: "pending"
                     }
                 ]
             }
