@@ -1,35 +1,31 @@
 <template>
     <div :class="size">
-        <div class="card card-widget widget-user-2">
+        <div class="card card-widget widget-user">
             <div class="widget-user-header" :class="bgClass">
-                <div class="widget-user-image">
-                    <img class="img-circle elevation-2" :src="imagePath" alt="User Avatar">
-                </div>
-
                 <h3 class="widget-user-username">{{ name }}</h3>
                 <h5 class="widget-user-desc">{{ designation }}</h5>
             </div>
-
-            <div class="card-footer p-0">
-                <ul class="nav flex-column">
-                    <horizontal-user-widget-item title="Some Title" badge-class="bg-warning"/>
-                    <horizontal-user-widget-item title="Some Title" badge-class="bg-success"/>
-                    <horizontal-user-widget-item title="Some Title" badge-class="bg-danger"/>
-                    <horizontal-user-widget-item title="Some Title"/>
-                </ul>
+            <div class="widget-user-image">
+                <img class="img-circle elevation-2" :src="imagePath" alt="User Avatar">
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <vertical-user-widget-item title="Sales" count="30"/>
+                    <vertical-user-widget-item title="Project" count="20"/>
+                    <vertical-user-widget-item title="Other" count="89"/>
+                </div>
             </div>
         </div>
-        <!-- /.widget-user -->
     </div>
 </template>
 
 <script>
-    import HorizontalUserWidgetItem from "../partial/widget/HorizontalUserWidgetItem";
+    import VerticalUserWidgetItem from "../partial/widget/VerticalUserWidgetItem";
 
     export default {
-        name: "HorizontalUserCard",
+        name: "VerticalUserCard",
         components: {
-            HorizontalUserWidgetItem
+            VerticalUserWidgetItem
         },
         props: {
             size: {
@@ -49,7 +45,7 @@
             },
             designation: {
                 type: String
-            },
+            }
         },
         computed: {
             imagePath() {
